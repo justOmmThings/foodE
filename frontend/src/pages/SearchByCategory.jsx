@@ -25,9 +25,9 @@ const SearchByCategory = () => {
             value={category}
             onChange={(e) => setCategory(e.target.value)}
             placeholder="Enter category"
-            className="p-2 border border-gray-600 rounded-lg bg-gray-700 text-white"
+            className="p-2 border border-gray-600 rounded-lg bg-gray-700 text-dark"
           />
-          <button onClick={handleSearch} className="ml-4 px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg">
+          <button onClick={handleSearch} className="ml-4 duration-500 px-4 py-2 text-dark bg-white hover:bg-light rounded-lg">
             Search
           </button>
         </div>

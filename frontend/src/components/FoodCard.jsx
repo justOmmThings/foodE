@@ -2,7 +2,7 @@ import React from 'react';
 
 const FoodCard = ({ food }) => {
   return (
-    <div className="bg-gray-900 p-4 rounded-lg shadow-lg">
+    <div className="bg-white p-4 rounded-lg shadow-lg text-dark">
       <h2 className="text-xl font-semibold mb-2">{food.name}</h2>
       <p><strong>Category:</strong> {food.category}</p>
       <p><strong>Calories:</strong> {food.calories} kcal</p>

@@ -20,9 +20,9 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-gray-800 p-4 shadow-lg relative z-20">
+      <nav className="bg-black p-4 shadow-lg relative z-20">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold">Food Finder</h1>
+          <h1 className="text-xl font-bold">FoodE</h1>
           <button
             className="block lg:hidden text-white"
             onClick={toggleMenu}
@@ -46,12 +46,12 @@ const Navbar = () => {
           <ul
             className={`${
               isOpen ? "block" : "hidden"
-            } lg:flex space-y-4 lg:space-y-0 lg:space-x-4 absolute lg:static bg-gray-800 lg:bg-transparent left-0 top-full w-full lg:w-auto lg:flex-row lg:items-center z-20`}
+            } lg:flex space-y-4 lg:space-y-0 lg:space-x-4 absolute lg:static bg-black lg:bg-transparent left-0 top-full w-full lg:w-auto lg:flex-row lg:items-center z-20`}
           >
             <li>
               <Link
                 to="/"
-                className={`block py-2 px-4 hover:text-gray-400 transition-colors duration-300 ${
+                className={`block py-2 px-4 hover:text-light transition-colors duration-300 ${
                   location.pathname === "/" ? activeClass : ""
                 }`}
                 onClick={closeMenu}
@@ -62,7 +62,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/category"
-                className={`block py-2 px-4 hover:text-gray-400 transition-colors duration-300 ${
+                className={`block py-2 px-4 hover:text-light transition-colors duration-300 ${
                   location.pathname === "/category" ? activeClass : ""
                 }`}
                 onClick={closeMenu}
@@ -73,7 +73,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/nutrients"
-                className={`block py-2 px-4 hover:text-gray-400 transition-colors duration-300 ${
+                className={`block py-2 px-4 hover:text-light transition-colors duration-300 ${
                   location.pathname === "/nutrients" ? activeClass : ""
                 }`}
                 onClick={closeMenu}
@@ -84,7 +84,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/calories"
-                className={`block py-2 px-4 hover:text-gray-400 transition-colors duration-300 ${
+                className={`block py-2 px-4 hover:text-light transition-colors duration-300 ${
                   location.pathname === "/calories" ? activeClass : ""
                 }`}
                 onClick={closeMenu}
@@ -110,7 +110,7 @@ const Navbar = () => {
 const App = () => {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-900 text-white">
+      <div className="min-h-screen bg-dark text-white">
         <Navbar />
         <main className="container mx-auto p-4">
           <Routes>
